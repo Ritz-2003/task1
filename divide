@@ -1,0 +1,28 @@
+#include <stdio.h>
+ 
+void main()
+{
+    int i, a, b, c, d, j, count = 0, count2 = 0;
+ 
+    printf("Enter the value of a and b");
+    scanf("%d, %d", &a, &b);
+    printf("Enter the values i and j");
+    scanf("%d, %d", &c, &d);
+    for (i = a; i < b+1; i++)
+    {
+        if (i % c == 0)
+        {
+            count++;
+        }
+    }
+    for (j=a; j<b+1; j++)
+    {
+        if (j % d == 0)
+        {
+            count2++;
+        }
+    
+    }
+    printf("\n Number of integers divisible by %d = %d\n", c, count);
+    printf("\n Number of integers divisible by %d = %d\n", d, count2);
+}
